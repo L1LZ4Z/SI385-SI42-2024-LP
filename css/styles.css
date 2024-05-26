@@ -1,0 +1,162 @@
+/*Variables*/
+:root {
+    /*Tipografía*/
+    font-size: 16px;
+    /*Colores de utilidad*/
+    --negro: #000000;
+    --sombra_baja: #454545;
+    --sombra: #666666;
+    --sombra_alta: #909090;
+    --tono_intermedio: #B5B5B5;
+    --luz_baja: #C8C8C8;
+    --luz: #DCDCDC;
+    --luz_alta: #EDEDED;
+    --blanco: #FFFFFF;
+    /*Colores originales*/
+    --original_1: #081A40;
+    --original_2: #253659;
+    --original_3: #C4D4F2;
+    --original_4: #031326;
+    --original_5: #F2F2F2;
+    /*Colores complementarios*/
+    --complementario_1: #F2E4C4;
+    --complementario_2: #8494B3;
+    --complementario_3: var(--original_3);
+    --complementario_4: #9D8D67;
+    --complementario_5: #384C73;
+    /*Colores triada*/
+    --triada_1: #E3F2C4;
+    --triada_2: #F2CBC4;
+    --triada_3: var(--original_3);
+    --triada_4: #67799D;
+    --triada_5: #67799D;
+}
+
+/*Asignacion de variables a las etiquetas y clases correspondientes*/
+* {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+.text-large {
+    font-size: 1.25rem;
+}
+.text-medium {
+    font-size: 1.125rem;
+}
+.text-regular {
+    font-size: 1rem;
+}
+.text-small {
+    font-size: 0.875rem;
+}
+.text-tiny {
+    font-size: 0.75rem;
+}
+body, header {
+    background-color:var(--original_2);
+}
+.navbar, #eslogan {
+    background-color: var(--original_1);
+}
+#eslogan {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 3rem;
+    color: var(--blanco);
+    font-weight: 600;
+}
+#seccion-formulario {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#formulario {
+    background-color: var(--blanco);
+    padding-top: 15px;
+}
+#logo, h1, h2, h3, h4, h5, p, .nav-tabs a {
+    color:var(--blanco);
+}
+#logo {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.navbar-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav > li > a {
+    padding-top: 24px;
+    padding-bottom: 24px; 
+    font-size: 1rem;
+}
+.align-self-start {
+    width: 100%;
+}
+#vista-2 .media, #vista-3 .media {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#vista-2 {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+#vista-2 p, #vista-3 p {
+    padding-top: 10px;
+}
+#vista-3 h2 {
+    margin-top: 20px;
+}
+#vista-3 .col-md-4 {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+#vista-2 .media-left, #vista-2 .media-right {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+label a {
+    color: var(--original_1);
+    text-decoration: underline;
+}
+#imagen-fondo {
+    background-image: url('../img/Crecimiento_1a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Ajustes puntuales para la correcta visualización de la página*/
+body { padding-top: 70px; }
+.input-group {
+    width: 100%;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+#main-content {
+    flex: 1 0 auto;
+}
+.container-fluid {
+    height: 100%;
+}
+
