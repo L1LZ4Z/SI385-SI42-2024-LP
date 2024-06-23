@@ -72,6 +72,7 @@ body, header {
 }
 .navbar, #eslogan {
     background-color: var(--original_1);
+    text-align: center;
 }
 #eslogan {
     padding-top: 32px;
@@ -90,7 +91,7 @@ body, header {
     background-color: var(--blanco);
     padding-top: 15px;
 }
-#logo, h1, h2, h3, h4, h5, p, .nav-tabs a {
+#logo, h1, h2, h3, h4, h5, p, .navbar-default .navbar-nav>li>a {
     color:var(--blanco);
 }
 #logo {
@@ -159,4 +160,46 @@ body {
 .container-fluid {
     height: 100%;
 }
-
+.nav-tabs {
+    display: inline-block;
+}
+#bs-example-navbar-collapse-1 > ul > li > a:focus, #bs-example-navbar-collapse-1 > ul > li > a:hover {
+    color:var(--blanco);
+    background-color: var(--complementario_5);
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+button[type="submit"] {
+    justify-content: flex-end;
+}
+#encabezadoFormulario p {
+    color:var(--negro);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    #eslogan {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 640px) {
+    #eslogan {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 490px) {
+    #eslogan {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 1.5rem;
+    }
+}
