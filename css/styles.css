@@ -182,6 +182,20 @@ button[type="submit"] {
     font-weight: 600;
     text-decoration: underline;
 }
+#video-player {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+ul li{
+    color: var(--blanco);
+}
+#vista-5 ul {
+    text-align: justify;
+}
+#video-player {
+    margin-top: 40px;
+}
+
 @media (max-width: 768px) {
     #eslogan {
         padding-top: 27px;
