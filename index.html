@@ -63,20 +63,20 @@
                 <!--contenido dinamico-->
                 <div id="pieFormulario">
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="terminos-uso" name="terminosUso" value="aceptado">
+                    <input type="checkbox" class="form-check-input" id="terminos-uso" name="terminosUso" value="aceptado" required>
                     <label class="form-check-label" for="terminos-uso">
                       Acepto los <a href="" target="_blank">Términos y condiciones</a>
                     </label>
                   </div>
                 
                   <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="no-robot" name="noRobot" value="noSoyRobot">
+                    <input type="checkbox" class="form-check-input" id="no-robot" name="noRobot" value="noSoyRobot" required>
                     <label class="form-check-label" for="no-robot">
                       No soy un robot
                     </label>
                   </div>
                   <div class="form-group form-check">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <input type="submit" value="Enviar" onclick="Calcular()" class="submit-btn" />
                   </div>
                   
                 </div>

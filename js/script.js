@@ -122,3 +122,40 @@ function loadDefaultForm() {
                 });
     });
   })(window);
+
+//FORMULARIO
+
+const btn = document.querySelector(".submit-btn")
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  var defaultRadioButton = document.getElementById('default');
+  var secondRadioButton = document.getElementById('second');
+  var terminos = document.getElementById('terminos-uso');
+  var captcha = document.getElementById('no-robot');
+  if (defaultRadioButton.checked){
+    const camp1 = document.getElementById("nombres");
+    const camp2 = document.getElementById("apellido-paterno");
+    const camp3 = document.getElementById("universidad");
+    const camp4 = document.getElementById("apellido-materno");
+    const camp5 = document.getElementById("correo-electronico");
+    mensaje = `${camp2.value}, ${camp1.value} de la ${camp3.value} tu registro ha sido realizado con exito!`;
+    if(camp1.value === "" || camp2.value === "" || camp3.value === ""|| camp4.value === ""|| camp5.value === ""){mensaje=`Llena todos los campos para completar el registro!`; }
+    if(!captcha.checked || !terminos.checked){mensaje=`Confirma los checkbox!`; }
+  }
+  if (secondRadioButton.checked){
+    const camp1 = document.getElementById("nombre-empresa");
+    const camp2 = document.getElementById("ruc");
+    const camp3 = document.getElementById("sector");
+    const camp4 = document.getElementById("direccion");
+    const camp5 = document.getElementById("correo");
+    mensaje = `${camp1.value} con RUC ${camp2.value} del sector ${camp3.value} su registro ha sido realizado con exito!`;
+    if(camp1.value === "" || camp2.value === "" || camp3.value === ""|| camp4.value === ""|| camp5.value === ""){mensaje=`Llena todos los campos para completar el registro!`; }
+    if(!captcha.checked || !terminos.checked){mensaje=`Confirma los checkbox!`; }
+  }
+  alert(mensaje);
+  camp1.value = "";
+  camp2.value = "";
+  camp3.value = "";
+  mensaje.value="";
+})
+
